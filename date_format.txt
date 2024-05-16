@@ -1,0 +1,12 @@
+import pandas as pd
+
+df = pd.read_csv('data.csv')
+
+# convert the 'date' column to a date data type
+df['Date'] = pd.to_datetime(df['Date'], errors='coerce')
+
+# print the data types of the columns
+print(df)
+
+
+  
